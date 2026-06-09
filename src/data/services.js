@@ -18,7 +18,7 @@ const services = [
     priceTo: 120000,
     unit: "dona",
     category: "mebel",
-    image: "/img/images.jpg",
+    image: "/img/Divan.svg",
     available: true,
   },
   {
