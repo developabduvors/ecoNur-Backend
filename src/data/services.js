@@ -1,0 +1,48 @@
+const services = [
+  {
+    id: 1,
+    title: "Gilam yuvish",
+    description: "Professional gilam tozalash xizmati. Har qanday o'lchamdagi gilamlar.",
+    priceFrom: 12000,
+    priceTo: 15000,
+    unit: "1 kv.m",
+    category: "gilam",
+    image: "/img/Gilam1.svg",
+    available: true,
+  },
+  {
+    id: 2,
+    title: "Yumshoq mebel va stullar",
+    description: "Divon, kreslo, stul va boshqa yumshoq mebellarni chuqur tozalash.",
+    priceFrom: 30000,
+    priceTo: 120000,
+    unit: "dona",
+    category: "mebel",
+    image: "/img/images.jpg",
+    available: true,
+  },
+  {
+    id: 3,
+    title: "Korpacha",
+    description: "Korpacha va yostiqlarni professional tozalash.",
+    priceFrom: 50000,
+    priceTo: 80000,
+    unit: "dona",
+    category: "korpacha",
+    image: "/img/Korpacha.svg",
+    available: true,
+  },
+  {
+    id: 4,
+    title: "Burchatka",
+    description: "Burchatka va kichik to'shaklarni tozalash.",
+    priceFrom: 15000,
+    priceTo: 30000,
+    unit: "dona",
+    category: "burchatka",
+    image: "/img/Burchatka.svg",
+    available: true,
+  },
+];
+
+module.exports = services;
