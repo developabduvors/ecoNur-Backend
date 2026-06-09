@@ -17,7 +17,7 @@ router.post('/', async (req, res) => {
   console.log('Xizmat:', service || '—');
 
   const text = [
-    '📋 *Yangi ariza — Eco Nur*',
+    '🛎 *Zakaz keldi — Eco Nur*',
     '',
     `👤 Ism: ${name || '—'}`,
     `📞 Telefon: ${phone || '—'}`,
