@@ -7,7 +7,7 @@ const services = [
     priceTo: 15000,
     unit: "1 kv.m",
     category: "gilam",
-    image: "/img/Gilam1.svg",
+    image: "/img/Gilam1.webp",
     available: true,
   },
   {
@@ -18,7 +18,7 @@ const services = [
     priceTo: 120000,
     unit: "dona",
     category: "mebel",
-    image: "/img/Divan.svg",
+    image: "/img/Divan.webp",
     available: true,
   },
   {
@@ -29,7 +29,7 @@ const services = [
     priceTo: 80000,
     unit: "dona",
     category: "korpacha",
-    image: "/img/Korpacha.svg",
+    image: "/img/Korpacha.webp",
     available: true,
   },
   {
@@ -40,7 +40,7 @@ const services = [
     priceTo: 30000,
     unit: "dona",
     category: "burchatka",
-    image: "/img/Burchatka.svg",
+    image: "/img/Burchatka.webp",
     available: true,
   },
 ];
