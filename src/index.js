@@ -4,6 +4,7 @@ const cors = require("cors");
 
 const servicesRouter = require("./routes/services");
 const applicationsRouter = require("./routes/applications");
+const reviewsRouter = require("./routes/reviews");
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -41,6 +42,7 @@ app.get("/", (req, res) => {
 // Routes
 app.use("/api/services", servicesRouter);
 app.use("/api/applications", applicationsRouter);
+app.use("/api/reviews", reviewsRouter);
 
 // 404 handler
 app.use((req, res) => {

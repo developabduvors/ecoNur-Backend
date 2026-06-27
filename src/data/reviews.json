@@ -1,0 +1,74 @@
+[
+  {
+    "id": "seed-1",
+    "author": "Dilnoza Karimova",
+    "date": "2026-05-18",
+    "rating": 5,
+    "text": "Gilamni uydan olib ketishdi, ikki kunda yangidek qilib qaytarishdi. Hidi ham, dog'lari ham qolmagan. Juda mamnunman, rahmat!",
+    "service": "Gilam yuvish",
+    "approved": true
+  },
+  {
+    "id": "seed-2",
+    "author": "Sardor To'xtayev",
+    "date": "2026-05-02",
+    "rating": 5,
+    "text": "Divan va kreslolarni tozalatdim. Natija ajoyib, eski mebel yangidek bo'ldi. Ustalar o'z ishini biladi, vaqtida kelishdi.",
+    "service": "Yumshoq mebel",
+    "approved": true
+  },
+  {
+    "id": "seed-3",
+    "author": "Madina Yusupova",
+    "date": "2026-04-21",
+    "rating": 5,
+    "text": "Korpachalarni yuvdirdim, narxi ham hamyonbop ekan. Bepul olib ketib, bepul yetkazib berishdi. Kelasi safar yana murojaat qilaman.",
+    "service": "Korpa-korpacha",
+    "approved": true
+  },
+  {
+    "id": "seed-4",
+    "author": "Jasur Rahimov",
+    "date": "2026-04-09",
+    "rating": 4,
+    "text": "Sifati zo'r, gilamim tozalandi. Faqat bir oz kechikishdi, lekin oldindan ogohlantirishdi. Umuman olganda tavsiya qilaman.",
+    "service": "Gilam yuvish",
+    "approved": true
+  },
+  {
+    "id": "seed-5",
+    "author": "Nilufar Abdullayeva",
+    "date": "2026-03-27",
+    "rating": 5,
+    "text": "Bolalar gilamida ko'p dog'lar bor edi, hammasini ketkazishdi. Allergiyamiz bor, ekologik vositalar ishlatishlari juda muhim bo'ldi.",
+    "service": "Gilam yuvish",
+    "approved": true
+  },
+  {
+    "id": "seed-6",
+    "author": "Bekzod Qodirov",
+    "date": "2026-03-15",
+    "rating": 5,
+    "text": "Telegram orqali yozdim, darrov javob berishdi. Burchatka va kafelni tozalatdim, xizmat tez va sifatli. 24/7 ishlashlari qulay.",
+    "service": "Burchatka va kafel",
+    "approved": true
+  },
+  {
+    "id": "seed-7",
+    "author": "Gulbahor Ismoilova",
+    "date": "2026-02-28",
+    "rating": 5,
+    "text": "Bir necha yildan beri faqat Eco Nur'ga gilam yuvdiraman. Hech qachon ko'ngilni qoldirishmagan, doimo toza va o'z vaqtida.",
+    "service": "Gilam yuvish",
+    "approved": true
+  },
+  {
+    "id": "seed-8",
+    "author": "Otabek Nazarov",
+    "date": "2026-02-10",
+    "rating": 5,
+    "text": "Katta jun gilam edi, boshqa joylar olishni xohlamadi. Eco Nur muammosiz oldi va a'lo darajada yuvdi. Professional jamoa!",
+    "service": "Gilam yuvish",
+    "approved": true
+  }
+]
