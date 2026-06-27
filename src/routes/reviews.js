@@ -48,25 +48,19 @@ router.post('/', async (req, res) => {
     rating: r,
     text: String(text).trim().slice(0, 500),
     service: String(service || '').trim().slice(0, 60) || 'Umumiy',
-    approved: false, // egasi tasdiqlamaguncha ko'rinmaydi
+    approved: true, // admin tasdig'i kerak emas — sharh darrov chiqadi
   };
 
   const list = readAll();
   list.push(review);
   writeAll(list);
 
-  // Telegramga xabar + tasdiqlash havolasi
+  // Telegramga xabar (ma'lumot uchun — kerak bo'lsa egasi qo'lda o'chiradi)
   const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
   const CHAT_ID = process.env.TELEGRAM_CHAT_ID;
-  const ADMIN_TOKEN = process.env.ADMIN_TOKEN;
-  const PUBLIC_URL = (process.env.PUBLIC_API_URL || '').replace(/\/$/, '');
 
   try {
     if (BOT_TOKEN && CHAT_ID) {
-      const approveLink =
-        ADMIN_TOKEN && PUBLIC_URL
-          ? `\n\n✅ Tasdiqlash: ${PUBLIC_URL}/api/reviews/${review.id}/approve?token=${ADMIN_TOKEN}`
-          : '\n\n(Tasdiqlash uchun ADMIN_TOKEN va PUBLIC_API_URL sozlang)';
       const msg = [
         '⭐ *Yangi sharh — Eco Nur*',
         '',
@@ -74,7 +68,6 @@ router.post('/', async (req, res) => {
         `🧹 ${review.service}`,
         `⭐ Baho: ${review.rating}/5`,
         `💬 ${review.text}`,
-        approveLink,
       ].join('\n');
       await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
         method: 'POST',
@@ -86,21 +79,7 @@ router.post('/', async (req, res) => {
     console.error('Telegram xato:', err.message);
   }
 
-  res.json({ success: true, message: 'Sharhingiz tekshiruvdan keyin chiqadi. Rahmat!' });
-});
-
-// ── GET /api/reviews/:id/approve?token=... — egasi tasdiqlaydi ──
-router.get('/:id/approve', (req, res) => {
-  const ADMIN_TOKEN = process.env.ADMIN_TOKEN;
-  if (!ADMIN_TOKEN || req.query.token !== ADMIN_TOKEN) {
-    return res.status(403).json({ success: false, message: 'Ruxsat yo\'q' });
-  }
-  const list = readAll();
-  const item = list.find((r) => r.id === req.params.id);
-  if (!item) return res.status(404).json({ success: false, message: 'Topilmadi' });
-  item.approved = true;
-  writeAll(list);
-  res.json({ success: true, message: 'Sharh tasdiqlandi ✓' });
+  res.json({ success: true, message: 'Sharhingiz uchun rahmat!' });
 });
 
 module.exports = router;
